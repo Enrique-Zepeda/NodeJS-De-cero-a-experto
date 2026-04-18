@@ -4,12 +4,11 @@
 //     .then((resp) => resp.json())
 //     .then((pokemon) => pokemon.name);
 // };
-const { httpClientPlugin } = require("../../plugins");
 
-const getPokemonById = async (id) => {
+import { httpClientPlugin } from "../plugins";
+
+export const getPokemonById = async (id: number) => {
   const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
   const pokemon = await httpClientPlugin.get(url);
   return pokemon.name;
 };
-
-module.exports = getPokemonById;

@@ -1,1 +1,34 @@
 **/node_modules/
+# Dependencias
+**/node_modules/
+
+# Compilación de TypeScript
+**/dist/
+**/out/
+**/build/
+
+# Archivos de entorno (Variables de seguridad/API Keys)
+**/.env
+**/.env.template
+**/.env.local
+
+# Logs de errores de npm
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Carpetas de editores
+.vscode/
+.idea/
+
+# Winston Logs
+**/*.log
+**/error.log
+**/combined.log
+
+# Si en algún momento Winston crea una carpeta de logs dedicada
+**/logs/

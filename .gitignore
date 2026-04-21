@@ -6,6 +6,7 @@
 **/dist/
 **/out/
 **/build/
+**/coverage/
 
 # Archivos de entorno (Variables de seguridad/API Keys)
 **/.env
